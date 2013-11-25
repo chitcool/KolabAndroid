@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/ScrollView01" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent">
+  <LinearLayout 
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/TextView10" android:layout_height="wrap_content" android:text="@string/settingsHeadlineIMAP" android:textStyle="bold" android:layout_width="fill_parent" android:background="#C0C0C0" android:textColor="#000000" android:textSize="16sp"></TextView>
+
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host" android:layout_marginTop="10px"></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edithost" android:inputType="textUri"></EditText>
+	<TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/port"></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/editport" android:inputType="number"></EditText>
+	<CheckBox android:text="@string/usessl" android:id="@+id/usessl" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+	<TextView android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/username"></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/editusername" android:inputType="text"></EditText>
+	<TextView android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/password"></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/editpassword" android:inputType="textPassword"></EditText>
+	<TextView android:id="@+id/TextView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/imapNamespace"></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/editimapnamespace" android:inputType="text"></EditText>
+	<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/btnTestSettings" android:id="@+id/BtnTestSettings" android:onClick="onClick"></Button>
+
+
+
+	<TextView android:id="@+id/TextView08" android:layout_height="wrap_content" android:text="@string/settingsHeadlineCalendar" android:textStyle="bold" android:layout_width="fill_parent" android:background="#C0C0C0" android:textColor="#000000" android:textSize="16sp"></TextView>
+
+	<TextView android:id="@+id/TextView07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/foldercalendar"></TextView>
+	<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/spinnerFolderCalendar"></Spinner>
+
+
+
+	<TextView android:id="@+id/TextView09" android:layout_height="wrap_content" android:textStyle="bold" android:text="@string/settingsHeadlineContacts" android:textSize="16sp" android:textColor="#000000" android:background="#C0C0C0" android:layout_width="fill_parent"></TextView>
+
+	<TextView android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/foldercontact"></TextView>
+	<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/spinnerFolderContacts"></Spinner>
+	<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/createRemoteHash" android:text="@string/createRemoteHash"></CheckBox>
+	<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mergeContactsByName" android:id="@+id/mergeContactsByName"></CheckBox>
+	<TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/targetAccount"></TextView>
+	<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/selectAccount"></Spinner>
+
+	<GridView android:id="@+id/GridView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></GridView>
+
+
+
+
+  </LinearLayout>
+</ScrollView>
